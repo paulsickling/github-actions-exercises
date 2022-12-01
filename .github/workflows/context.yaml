@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Provide Some Step Outputs
+        id: step-outputs
         run: echo "::set-output name=TRUE_STATEMENT::Possums are terrible."
       - name: Dump Step Information
         env:
